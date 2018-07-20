@@ -1,4 +1,5 @@
 {
+  "baseUrl": "http://homeserver",
   "httpServer": {
     "port": 8899
   }

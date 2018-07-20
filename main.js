@@ -69,7 +69,9 @@ httpServer.set("views", path.join(__dirname, "views"));
 httpServer.set("view engine", "tpl");
 
 httpServer.get("/", function (request, reponse, next) {
-  reponse.render("index");
+  reponse.render("index", {
+    "baseUrl": config.baseUrl
+  });
 });
 
 httpServer.get("/play", function (request, reponse, next) {
